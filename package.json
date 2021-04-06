@@ -1,0 +1,36 @@
+{
+  "name": "honduras-eta-project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.5",
+    "morgan": "^1.10.0",
+    "pg": "^8.3.3"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "server": "nodemon app.js",
+    "build": "cd client && npm run build",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install & npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josuedelgado123/vida-api-logistica.git"
+  },
+  "author": "@josuedelgado123",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josuedelgado123/vida-api-logistica/issues"
+  },
+  "homepage": "https://github.com/josuedelgado123/vida-api-logistica#readme"
+}

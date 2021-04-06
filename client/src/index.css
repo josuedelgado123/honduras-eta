@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #e0e4ff !important; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.no-deco-link {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.box {
+  background-color: #f6f6f6;
+}
+
+.parent-box {
+  background-color: #e1e1e1;
+}
+
+.carousel-item img {
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.delivery {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.2rem;
+  width: 4rem;
+  top: 0.8rem;
+  left: 0.8rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+@media (min-width: 576px) {
+  .carousel .carousel-inner {
+    height: 100%;
+  }
+  .carousel .carousel-item {
+    height: 300px;
+  }
+
+  .carousel-item img {
+    position: absolute;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    max-height: 300px;
+  }
+
+  .table-info {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel .carousel-inner {
+    height: 100%;
+  }
+  .carousel .carousel-item {
+    height: 400px;
+  }
+
+  .carousel-item img {
+    position: absolute;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    max-height: 400px;
+  }
+}
